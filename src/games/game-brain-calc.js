@@ -26,7 +26,7 @@ const getOperation = (operand1, operand2, operator) => {
   return result;
 };
 
-const gameIsEqual = () => {
+const gameCalc = () => {
   const numOne = getRandomNumber(0, 101);
   const numTwo = getRandomNumber(0, 101);
   const operator = getOperator();
@@ -37,5 +37,5 @@ const gameIsEqual = () => {
 };
 
 export default () => {
-  runEngine(gameRule, gameIsEqual);
+  runEngine(gameRule, gameCalc);
 };

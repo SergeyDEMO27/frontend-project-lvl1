@@ -10,7 +10,7 @@ const getMaxDivisor = (num1, num2) => {
   return num2;
 };
 
-const getDivisor = () => {
+const gameDivisor = () => {
   const numOne = getRandomNumber(1, 101);
   const numTwo = getRandomNumber(1, 101);
   const result = [];
@@ -20,5 +20,5 @@ const getDivisor = () => {
 };
 
 export default () => {
-  runEngine(gameRule, getDivisor);
+  runEngine(gameRule, gameDivisor);
 };
