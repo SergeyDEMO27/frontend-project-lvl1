@@ -1,6 +1,6 @@
-brain-even https://asciinema.org/a/ifaoDM2on4gsLS3Pzi4VV8o1r\n 
-brain-calc https://asciinema.org/a/SaBI5A7UX8exhbELq08KREpf8\n
-brain-gcd https://asciinema.org/a/6E30sK6WDFCe6gxKpOYz9xG1L
+brain-even https://asciinema.org/a/ifaoDM2on4gsLS3Pzi4VV8o1r \n 
+brain-calc https://asciinema.org/a/SaBI5A7UX8exhbELq08KREpf8 \n
+brain-gcd https://asciinema.org/a/6E30sK6WDFCe6gxKpOYz9xG1L \n
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/edji777/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/edji777/frontend-project-lvl1/actions)
