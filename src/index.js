@@ -4,7 +4,8 @@ import greetings from './cli.js';
 export default (gameRule, runGame) => {
   const nameOfUser = greetings();
   console.log(gameRule);
-  for (let i = 1; i <= 3; i += 1) {
+  const totalRounds = 3;
+  for (let i = 1; i <= totalRounds; i += 1) {
     const [question, rightAnswer] = runGame();
     console.log(`Question: ${question}`);
     let answer = readlineSync.question('Your answer: ');
