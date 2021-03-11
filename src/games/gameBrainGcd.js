@@ -1,5 +1,5 @@
 import runEngine from '../index.js';
-import { getRandomNumber } from './game-brain-even.js';
+import getRandomNumber from '../util.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
@@ -10,15 +10,15 @@ const getMaxDivisor = (num1, num2) => {
   return num2;
 };
 
-const gameDivisor = () => {
+const runGameRound = () => {
   const numOne = getRandomNumber(1, 101);
   const numTwo = getRandomNumber(1, 101);
-  const result = [];
-  result.push(`${numOne} ${numTwo}`);
-  result.push(getMaxDivisor(numOne, numTwo));
+  const question = `${numOne} ${numTwo}`;
+  const answer = getMaxDivisor(numOne, numTwo).toString();
+  const result = [question, answer];
   return result;
 };
 
 export default () => {
-  runEngine(gameRule, gameDivisor);
+  runEngine(gameRule, runGameRound);
 };
