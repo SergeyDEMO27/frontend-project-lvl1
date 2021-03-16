@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import printGreetUser from './cli.js';
+import printGreetGetUserName from './cli.js';
 
 export default (gameRule, runGame) => {
-  const userName = printGreetUser();
+  const userName = printGreetGetUserName();
   console.log(gameRule);
   const totalRounds = 3;
   for (let i = 0; i < totalRounds; i += 1) {

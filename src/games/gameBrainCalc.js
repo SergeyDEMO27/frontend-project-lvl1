@@ -8,7 +8,7 @@ const getOperator = () => {
   return operators[getRandomNumber(0, operators.length)];
 };
 
-const executionMathOperation = (numberOne, numberTwo, operator) => {
+const calculateMathOperation = (numberOne, numberTwo, operator) => {
   let result = 0;
   switch (operator) {
     case '+':
@@ -31,7 +31,7 @@ const runGameRound = () => {
   const numberTwo = getRandomNumber(0, 101);
   const operator = getOperator();
   const question = `${numberOne} ${operator} ${numberTwo}`;
-  const answer = executionMathOperation(numberOne, numberTwo, operator).toString();
+  const answer = calculateMathOperation(numberOne, numberTwo, operator).toString();
   const result = [question, answer];
   return result;
 };

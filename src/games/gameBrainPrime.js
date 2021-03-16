@@ -4,21 +4,23 @@ import getRandomNumber from '../util.js';
 const gameRule = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
 const checkPrime = (number) => {
+  let prime = true;
   if (number <= 1) {
-    return 'no';
-  }
-  for (let i = 2; i <= number / 2; i += 1) {
-    if (number % i === 0) {
-      return 'no';
+    prime = false;
+  } else {
+    for (let i = 2; i <= number / 2; i += 1) {
+      if (number % i === 0) {
+        prime = false;
+      }
     }
   }
-  return 'yes';
+  return prime;
 };
 
 const runGameRound = () => {
   const number = getRandomNumber(0, 999);
   const question = number;
-  const answer = checkPrime(number);
+  const answer = checkPrime(number) ? 'yes' : 'no';
   const result = [question, answer];
   return result;
 };
