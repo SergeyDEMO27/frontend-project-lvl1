@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import printGreetGetUserName from '../src/cli.js';
+import getUserNameAndPrintGreeting from '../src/cli.js';
 
-printGreetGetUserName();
+getUserNameAndPrintGreeting();
